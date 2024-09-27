@@ -130,20 +130,22 @@ Once you're done working, deactivate the virtual environment by running:
 deactivate
 ```
 <br>
+
 ### Additional Notes:
 - Ensure you have Python 3.6+ installed on your system before running the commands.
 - It’s important to always activate the virtual environment before running the project and deactivate it when done to avoid issues with global Python packages.
 <br><br>
+
 ---
 
 ## Data Pipeline Setup and Instructions
 
-This project uses the **Kaggle API** to automatically download, extract, and preprocess datasets. Follow the instructions below to set up the Kaggle API and run the data pipeline on **Mac**, **Windows**, and **Linux** systems.
+This project uses the **Kaggle API** to automatically download, extract, and preprocess datasets. Follow the instructions below to set up the Kaggle API and run the data pipeline on **Mac**, **Windows**, and **Linux** systems. <br>
 
 ### Prerequisites:
 1. **Python** installed on your system (Python 3.6+).
 2. **Kaggle API** credentials (`kaggle.json` file).
-3. Required Python libraries (listed in `requirements.txt`).
+3. Required Python libraries (listed in `requirements.txt`).<br>
 
 ---
 
@@ -153,7 +155,7 @@ To use the Kaggle API, you need to set up your API credentials (i.e., the `kaggl
 #### 1.1 Download your Kaggle API Key:
 1. Go to [Kaggle](https://www.kaggle.com/) and sign in.
 2. Navigate to your account settings by clicking on your profile icon and selecting "Account".
-3. Scroll down to the **API** section and click on **Create New API Token**. This will download a file named `kaggle.json`.
+3. Scroll down to the **API** section and click on **Create New API Token**. This will download a file named `kaggle.json`.<br>
 
 ---
 
@@ -164,11 +166,13 @@ Install the Kaggle API, which is available as a Python package:
 ```bash
 pip install kaggle
 ```
+<br>
+
 ---
 
 ### Step 3: Configure the Kaggle API
 
-Next, place the kaggle.json file in the correct location depending on your operating system.
+Next, place the kaggle.json file in the correct location depending on your operating system. <br>
 
 
 #### 3.1 For Mac and Linux Users:
@@ -184,7 +188,7 @@ Set the correct permissions for the kaggle.json file:
 ```bash
 chmod 600 ~/.kaggle/kaggle.json
 ```
-
+<br>
 
 #### 3.2 For Windows Users:
 
@@ -195,11 +199,13 @@ Move the `kaggle.json` file to the `.kaggle` directory in your user folder:
 3. Create a folder named `.kaggle` if it doesn’t exist.  
 4. Move `kaggle.json` into `C:\Users\<Your-Username>\.kaggle\`.  
 
+<br>
+
 ---
 
 ### Step 4: Running the Pipeline Script
 
-Once the Kaggle API is set up, you can run the data pipeline script to automatically download, extract, and preprocess the datasets.
+Once the Kaggle API is set up, you can run the data pipeline script to automatically download, extract, and preprocess the datasets. <br>
 
 #### 4.1 Run the Pipeline
 
@@ -208,6 +214,7 @@ In the terminal, navigate to the directory where the project is located and run 
 ```bash
 python3 scripts/download_data.py
 ```
+<br>
 
 This script will:
 
@@ -218,7 +225,7 @@ This script will:
 The datasets will be organized as follows:
 
 - Raw datasets will be saved in the `data/raw_data/` folder.  
-- Preprocessed datasets will be saved in the `data/processed_data/` folder.  
+- Preprocessed datasets will be saved in the `data/processed_data/` folder.  <br>
 
 ### Troubleshooting:
 
@@ -226,7 +233,7 @@ Error: `kaggle: command not found`: Ensure the Kaggle API is installed by runnin
 Error: Permission denied for `kaggle.json`: Ensure the correct permissions are set for `kaggle.json`:
 
 For Mac/Linux: `chmod 600 ~/.kaggle/kaggle.json`
-For Windows: Make sure the file is placed in the correct directory and is not write-protected.
+For Windows: Make sure the file is placed in the correct directory and is not write-protected. <br>
 
 ### Summary of Commands:
 **For Mac/Linux:**
@@ -237,6 +244,7 @@ mv ~/Downloads/kaggle.json ~/.kaggle/
 chmod 600 ~/.kaggle/kaggle.json
 python scripts/download_data.py
 ```
+<br>
 
 **For Windows:**
 ```bash
