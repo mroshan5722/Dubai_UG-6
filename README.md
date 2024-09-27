@@ -1,21 +1,55 @@
-Group Name : Dubai Group 6
+# Project Title
 
-Project Title :
+---
 
-Group Members :
-1. Hemansi Bhalani
-2. Ishana Jabbar
-3. Mehweesh Kadegaonkar
-4. Muhammed Roshan Palayamkot
-5. Shakib Moolur
-   
-Your Project Milestones, including when you are expecting to complete each requirement within context of the semester
+## Group Name: **Dubai Group 6**
 
-The sources of your dataset(s), including:
-a. The true source of where the data is from
-b. The original license for each source
-c. Two specific examples from your datasets, presented nicely
-d. Any additional steps taken during data collection to expand the dataset, and any metrics associated with these. If you have not done this, don’t worry.
+### Group Members:
+- Hemansi Bhalani
+- Ishana Jabbar
+- Mehweesh Kadegaonkar
+- Muhammed Roshan Palayamkot
+- Shakib Moolur
+
+---
+
+## Project Milestones:
+
+| Milestone  | Expected Completion Date |
+|------------|--------------------------|
+| Requirement 1 (R1) – Data Collection & Setup  | [Date] |
+| Requirement 2 (R2) – Exploratory Data Analysis | [Date] |
+| Requirement 3 (R3) – Initial Modeling | [Date] |
+| Requirement 4 (R4) – Model Evaluation | [Date] |
+| Requirement 5 (R5) – Final Report & Presentation | [Date] |
+
+---
+
+## Dataset Sources
+
+1. **Dataset 1**  
+   - **Source**: [Link to the true source]  
+   - **License**: [License type, e.g., CC BY 4.0]  
+   - **Examples**:  
+     | Feature 1 | Feature 2 | Output |
+     |-----------|-----------|--------|
+     | Example 1 | Example 2 | Output |
+     | Example 3 | Example 4 | Output |
+   - **Steps Taken**: [If any steps were taken to expand or clean the dataset, mention them here. If none, write "No additional steps taken."]
+
+2. **Dataset 2**  
+   - **Source**: [Link to the true source]  
+   - **License**: [License type]  
+   - **Examples**:  
+     | Feature 1 | Feature 2 | Output |
+     |-----------|-----------|--------|
+     | Example 1 | Example 2 | Output |
+     | Example 3 | Example 4 | Output |
+   - **Steps Taken**: [Mention steps if any. Otherwise, say "No additional steps taken."]
+
+---
+
+## Running the Data Preparation Pipeline
 
 How to run your data preparation pipeline, with a short overview of the steps it includes
 
@@ -25,9 +59,20 @@ b. What is your model using to predict from? (a.k.a., the inputs)
 c. A table of results (especially for R4/R5), using Markdown tables
 d. A figure showing the results, using permanent links
 
-Files/folders created in GitHub and their purpose.
+---
 
-# Information you will present in your Project Pitch must also be on the GitHub README.
+##Files and Folders Structure
+| File/Folder | Purpose |
+|-------------|---------|
+| data/	| Contains raw and processed datasets |
+| scripts/ | Contains data pipeline and preprocessing scripts |
+| notebooks/ | Contains Jupyter notebooks for EDA and modeling |
+| requirements.txt | List of Python dependencies for running the project |
+| README.md | Project overview and instructions |
+
+---
+
+#### Note : Information you will present in your Project Pitch must also be on the GitHub README.
 
 
 ## Data Pipeline Setup and Instructions
