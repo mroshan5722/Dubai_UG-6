@@ -91,20 +91,11 @@ Move the `kaggle.json` file to the `.kaggle` directory in your user folder:
 
 ---
 
-### Step 4: Install Python Libraries
-Ensure you have all the required libraries by installing them from the `requirements.txt` file. Run the following command in your terminal:
-
-```bash
-pip install -r requirements.txt
-```
-
----
-
-### Step 5: Running the Pipeline Script
+### Step 4: Running the Pipeline Script
 
 Once the Kaggle API is set up, you can run the data pipeline script to automatically download, extract, and preprocess the datasets.
 
-#### 5.1 Run the Pipeline
+#### 4.1 Run the Pipeline
 
 In the terminal, navigate to the directory where the project is located and run the following command:
 
@@ -138,7 +129,6 @@ pip install kaggle
 mkdir -p ~/.kaggle
 mv ~/Downloads/kaggle.json ~/.kaggle/
 chmod 600 ~/.kaggle/kaggle.json
-pip install -r requirements.txt
 python scripts/download_data.py
 ```
 
@@ -146,7 +136,6 @@ python scripts/download_data.py
 ```bash
 pip install kaggle
 # Move kaggle.json to C:\Users\<Your-Username>\.kaggle\
-pip install -r requirements.txt
 python scripts/download_data.py
 ```
 ---
