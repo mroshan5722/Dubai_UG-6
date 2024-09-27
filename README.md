@@ -83,10 +83,11 @@ chmod 600 ~/.kaggle/kaggle.json
 #### 3.2 For Windows Users:
 
 Move the `kaggle.json` file to the `.kaggle` directory in your user folder:  
-    1. Open `File Explorer`.  
-    2. Navigate to `C:\Users\<Your-Username>\`.  
-    3. Create a folder named `.kaggle` if it doesn’t exist.  
-    4. Move `kaggle.json` into `C:\Users\<Your-Username>\.kaggle\`.  
+
+1. Open `File Explorer`.  
+2. Navigate to `C:\Users\<Your-Username>\`.  
+3. Create a folder named `.kaggle` if it doesn’t exist.  
+4. Move `kaggle.json` into `C:\Users\<Your-Username>\.kaggle\`.  
 
 ---
 
@@ -119,8 +120,8 @@ This script will:
 
 The datasets will be organized as follows:
 
-- Raw datasets will be saved in the data/raw_data/ folder.  
-- Preprocessed datasets will be saved in the data/processed_data/ folder.  
+- Raw datasets will be saved in the `data/raw_data/` folder.  
+- Preprocessed datasets will be saved in the `data/processed_data/` folder.  
 
 ### Troubleshooting:
 
