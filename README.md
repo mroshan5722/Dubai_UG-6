@@ -1,7 +1,5 @@
 # Project Title
 
----
-
 ## Group Name: **Dubai Group 6**
 
 ### Group Members:
@@ -61,7 +59,7 @@ d. A figure showing the results, using permanent links
 
 ---
 
-##Files and Folders Structure
+## Files and Folders Structure
 | File/Folder | Purpose |
 |-------------|---------|
 | data/	| Contains raw and processed datasets |
@@ -74,6 +72,60 @@ d. A figure showing the results, using permanent links
 
 #### Note : Information you will present in your Project Pitch must also be on the GitHub README.
 
+## Setting Up a Virtual Environment and Installing Dependencies
+
+To ensure consistency across all environments, please set up a virtual environment and install the required dependencies using the `requirements.txt` file. Follow the steps below depending on your operating system.
+
+### For Mac and Linux Users:
+
+1. **Create a Virtual Environment**:
+   In the terminal, run the following command to create a virtual environment:
+   ```bash
+   python3 -m venv env
+   ```
+2. **Activate the Virtual Environment**: 
+After creating the virtual environment, activate it:
+```bash
+source env/bin/activate
+```
+3. **Install the Dependencies**: 
+With the virtual environment activated, install the project dependencies from the `requirements.txt` file:
+```bash
+pip install -r requirements.txt
+```
+4. **Deactivate the Virtual Environment**: 
+Once you're done working, deactivate the virtual environment by running:
+```bash
+deactivate
+```
+### For Windows Users:
+
+1. **Create a Virtual Environment**: 
+In Command Prompt or PowerShell, run the following command to create a virtual environment:
+```bash
+python -m venv env
+```
+2. **Activate the Virtual Environment**: 
+After creating the virtual environment, activate it:
+```bash
+.\env\Scripts\activate
+```
+3. **Install the Dependencies**: 
+With the virtual environment activated, install the project dependencies from the `requirements.txt` file:
+```bash
+pip install -r requirements.txt
+```
+4. **Deactivate the Virtual Environment**:
+Once you're done working, deactivate the virtual environment by running:
+```bash
+deactivate
+```
+
+### Additional Notes:
+- Ensure you have Python 3.6+ installed on your system before running the commands.
+- It’s important to always activate the virtual environment before running the project and deactivate it when done to avoid issues with global Python packages.
+
+---
 
 ## Data Pipeline Setup and Instructions
 
