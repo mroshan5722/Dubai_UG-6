@@ -1,6 +1,6 @@
-# Project Title
+# Project Title <br>
 
-## Group Name: **Dubai Group 6**
+### Group Name: **Dubai Group 6**
 
 ### Group Members:
 - Hemansi Bhalani
@@ -11,7 +11,7 @@
 
 ---
 
-## Project Milestones:
+### Project Milestones: <br>
 
 | Milestone  | Expected Completion Date |
 |------------|--------------------------|
@@ -23,7 +23,7 @@
 
 ---
 
-## Dataset Sources
+### Dataset Sources <br>
 
 1. **Dataset 1**  
    - **Source**: [Link to the true source]  
@@ -47,7 +47,7 @@
 
 ---
 
-## Running the Data Preparation Pipeline
+### Running the Data Preparation Pipeline <br>
 
 How to run your data preparation pipeline, with a short overview of the steps it includes
 
@@ -59,7 +59,7 @@ d. A figure showing the results, using permanent links
 
 ---
 
-## Files and Folders Structure
+### Files and Folders Structure <br>
 | File/Folder | Purpose |
 |-------------|---------|
 | data/	| Contains raw and processed datasets |
@@ -68,13 +68,18 @@ d. A figure showing the results, using permanent links
 | requirements.txt | List of Python dependencies for running the project |
 | README.md | Project overview and instructions |
 
+<br><br>
 ---
 
-#### Note : Information you will present in your Project Pitch must also be on the GitHub README.
+#### Note : Information you will present in your Project Pitch must also be on the GitHub README. <br><br>
+
+---
 
 ## Setting Up a Virtual Environment and Installing Dependencies
 
-To ensure consistency across all environments, please set up a virtual environment and install the required dependencies using the `requirements.txt` file. Follow the steps below depending on your operating system.
+To ensure consistency across all environments, please set up a virtual environment and install the required dependencies using the `requirements.txt` file. Follow the steps below depending on your operating system. <br>
+
+---
 
 ### For Mac and Linux Users:
 
@@ -98,6 +103,10 @@ Once you're done working, deactivate the virtual environment by running:
 ```bash
 deactivate
 ```
+<br>
+
+---
+
 ### For Windows Users:
 
 1. **Create a Virtual Environment**: 
@@ -120,11 +129,11 @@ Once you're done working, deactivate the virtual environment by running:
 ```bash
 deactivate
 ```
-
+<br>
 ### Additional Notes:
 - Ensure you have Python 3.6+ installed on your system before running the commands.
 - It’s important to always activate the virtual environment before running the project and deactivate it when done to avoid issues with global Python packages.
-
+<br><br>
 ---
 
 ## Data Pipeline Setup and Instructions
