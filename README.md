@@ -82,11 +82,11 @@ chmod 600 ~/.kaggle/kaggle.json
 
 #### 3.2 For Windows Users:
 
-Move the `kaggle.json` file to the `.kaggle` directory in your user folder:
-    1. Open `File Explorer`.
-    2. Navigate to `C:\Users\<Your-Username>\`.
-    3. Create a folder named `.kaggle` if it doesn’t exist.
-    4. Move `kaggle.json` into `C:\Users\<Your-Username>\.kaggle\`.
+Move the `kaggle.json` file to the `.kaggle` directory in your user folder:  
+    1. Open `File Explorer`.  
+    2. Navigate to `C:\Users\<Your-Username>\`.  
+    3. Create a folder named `.kaggle` if it doesn’t exist.  
+    4. Move `kaggle.json` into `C:\Users\<Your-Username>\.kaggle\`.  
 
 ---
 
@@ -113,14 +113,14 @@ python3 scripts/download_data.py
 
 This script will:
 
-1. Download the datasets from Kaggle.
-2. Extract the datasets (if compressed).
-3. Preprocess the datasets and save them to the appropriate folder.
+1. Download the datasets from Kaggle.  
+2. Extract the datasets (if compressed).  
+3. Preprocess the datasets and save them to the appropriate folder.  
 
 The datasets will be organized as follows:
 
-- Raw datasets will be saved in the data/raw_data/ folder.
-- Preprocessed datasets will be saved in the data/processed_data/ folder.
+- Raw datasets will be saved in the data/raw_data/ folder.  
+- Preprocessed datasets will be saved in the data/processed_data/ folder.  
 
 ### Troubleshooting:
 
@@ -131,7 +131,7 @@ For Mac/Linux: `chmod 600 ~/.kaggle/kaggle.json`
 For Windows: Make sure the file is placed in the correct directory and is not write-protected.
 
 ### Summary of Commands:
-*For Mac/Linux:*
+**For Mac/Linux:**
 ```bash
 pip install kaggle
 mkdir -p ~/.kaggle
@@ -141,7 +141,7 @@ pip install -r requirements.txt
 python scripts/download_data.py
 ```
 
-*For Windows:*
+**For Windows:**
 ```bash
 pip install kaggle
 # Move kaggle.json to C:\Users\<Your-Username>\.kaggle\
