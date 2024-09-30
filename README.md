@@ -234,6 +234,9 @@ Error: Permission denied for `kaggle.json`: Ensure the correct permissions are s
 
 For Mac/Linux: `chmod 600 ~/.kaggle/kaggle.json`
 For Windows: Make sure the file is placed in the correct directory and is not write-protected. <br>
+<br>
+
+---
 
 ### Summary of Commands:
 **For Mac/Linux:**

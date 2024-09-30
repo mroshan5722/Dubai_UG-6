@@ -1,4 +1,22 @@
-# Ignore all CSV files in the data folder and its subdirectories
+# Ignore all dataset files
+/data/raw_data/
+/data/processed_data/
+
+# Ignore CloudCast dataset files
+data/raw_data/cloudcast/
+/data/processed_data/cloudcast/
+
+# Ignore Chess dataset
+data/raw_data/chess/
+/data/processed_data/chess/
+
+# Ignore Phishing dataset
+data/raw_data/phishing/
+/data/processed_data/phishing/
+
+# Ignore all .npy, .npz, and .csv files (commonly used in datasets)
+*.npy
+*.npz
 *.csv
 
 # Byte-compiled / optimized / DLL files
