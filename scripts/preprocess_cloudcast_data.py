@@ -1,63 +1,61 @@
 import os
 import numpy as np
-from sklearn.preprocessing import StandardScaler # type: ignore
-from sklearn.decomposition import PCA # type: ignore
+from sklearn.preprocessing import StandardScaler
+from sklearn.decomposition import PCA
+from skimage.transform import resize
 
 # Define paths for the CloudCastSmall dataset
 RAW_TRAIN_DIR = './data/raw_data/cloudcast/CloudCastSmall/TrainCloud'
 RAW_TEST_DIR = './data/raw_data/cloudcast/CloudCastSmall/TestCloud'
 PROCESSED_TRAIN_DIR = './data/processed_data/cloudcast/train'
 PROCESSED_TEST_DIR = './data/processed_data/cloudcast/test'
-GEO_TRAIN_FILE = './data/raw_data/cloudcast/CloudCastSmall/TrainCloud/GEO.npz'
-TIMESTAMPS_TRAIN_FILE = './data/raw_data/cloudcast/CloudCastSmall/TrainCloud/TIMESTAMPS.npy'
-GEO_TEST_FILE = './data/raw_data/cloudcast/CloudCastSmall/TestCloud/GEO.npz'
-TIMESTAMPS_TEST_FILE = './data/raw_data/cloudcast/CloudCastSmall/TestCloud/TIMESTAMPS.npy'
 
 # Ensure processed data directories exist
 os.makedirs(PROCESSED_TRAIN_DIR, exist_ok=True)
 os.makedirs(PROCESSED_TEST_DIR, exist_ok=True)
 
-# Function to load cloud data from .npy files
-def load_cloud_data(directory, limit=None):
+# Function to load and preprocess cloud data in batches
+def process_data_in_batches(directory, batch_size=100, target_size=(128, 128), output_dir=None, apply_pca=True):
     files = [f for f in sorted(os.listdir(directory)) if f.endswith('.npy')]
-    if limit:
-        files = files[:limit]
-    
-    data = [np.load(os.path.join(directory, file)) for file in files]
-    return np.array(data)
-
-# Preprocessing pipeline for CloudCast dataset
-def preprocess_cloudcast_data(data, apply_pca=False):
-    # 1. Normalize pixel values to [0, 1]
-    data = data / 255.0
-    
-    # 2. Flatten images (required for models like KNN, MLP, etc.)
-    flattened_data = data.reshape(data.shape[0], -1)
-    
-    # 3. Standardize features (especially for clustering and non-CNN models)
     scaler = StandardScaler()
-    standardized_data = scaler.fit_transform(flattened_data)
-    
-    # 4. Apply PCA for dimensionality reduction (Optional, for clustering)
-    if apply_pca:
-        pca = PCA(n_components=50)  # Adjust the number of components as needed
-        data_pca = pca.fit_transform(standardized_data)
-        return data_pca
-    
-    return standardized_data
+    total_files = len(files)
 
-# Load train and test cloud data
-print("Loading cloud data...")
-train_data = load_cloud_data(RAW_TRAIN_DIR)
-test_data = load_cloud_data(RAW_TEST_DIR)
+    for i in range(0, total_files, batch_size):
+        batch_files = files[i:i + batch_size]
+        data_batch = []
+        
+        # Load and resize data in batch
+        for file in batch_files:
+            file_data = np.load(os.path.join(directory, file))
+            resized_data = resize(file_data, target_size, anti_aliasing=True)
+            data_batch.append(resized_data)
+        
+        data_batch = np.array(data_batch)
+        
+        # Normalize and flatten the batch
+        data_batch = data_batch / 255.0
+        flattened_data_batch = data_batch.reshape(data_batch.shape[0], -1)
+        
+        # Standardize the batch
+        standardized_data_batch = scaler.fit_transform(flattened_data_batch)
+        
+        # Apply PCA for dimensionality reduction if enabled
+        if apply_pca:
+            # Calculate the maximum allowable components for PCA
+            max_components = min(standardized_data_batch.shape[0], standardized_data_batch.shape[1])
+            pca = PCA(n_components=min(50, max_components))  # Adjust components dynamically
+            standardized_data_batch = pca.fit_transform(standardized_data_batch)
+        
+        # Save each batch
+        output_file = os.path.join(output_dir, f"processed_batch_{i // batch_size}.npy")
+        np.save(output_file, standardized_data_batch)
+        print(f"Processed batch {i // batch_size + 1} out of {total_files // batch_size + 1}")
 
-# Preprocess the train and test data
-print("Preprocessing train and test cloud data...")
-processed_train_data = preprocess_cloudcast_data(train_data, apply_pca=True)
-processed_test_data = preprocess_cloudcast_data(test_data, apply_pca=True)
+# Process train and test data in batches
+print("Processing train data in batches...")
+process_data_in_batches(RAW_TRAIN_DIR, batch_size=100, output_dir=PROCESSED_TRAIN_DIR)
 
-# Save processed train and test data
-np.save(os.path.join(PROCESSED_TRAIN_DIR, 'processed_train_cloudcast.npy'), processed_train_data)
-np.save(os.path.join(PROCESSED_TEST_DIR, 'processed_test_cloudcast.npy'), processed_test_data)
+print("Processing test data in batches...")
+process_data_in_batches(RAW_TEST_DIR, batch_size=100, output_dir=PROCESSED_TEST_DIR)
 
-print("Data preprocessing complete!")
+print("Data processing complete!")
