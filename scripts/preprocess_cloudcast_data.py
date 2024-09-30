@@ -1,7 +1,7 @@
 import os
 import numpy as np
-from sklearn.preprocessing import StandardScaler
-from sklearn.decomposition import PCA
+from sklearn.preprocessing import StandardScaler # type: ignore
+from sklearn.decomposition import PCA # type: ignore
 
 # Define paths for the CloudCastSmall dataset
 RAW_TRAIN_DIR = './data/raw_data/cloudcast/CloudCastSmall/TrainCloud'
