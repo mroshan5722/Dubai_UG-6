@@ -3,11 +3,11 @@
 /data/processed_data/
 
 # Ignore CloudCast dataset files
-data/raw_data/cloudcast/
+/data/raw_data/cloudcast/
 /data/processed_data/cloudcast/
 
 # Ignore Chess dataset
-data/raw_data/chess/
+/data/raw_data/chess/
 /data/processed_data/chess/
 
 # Ignore Phishing dataset
