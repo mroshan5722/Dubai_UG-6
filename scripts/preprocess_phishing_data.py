@@ -137,4 +137,5 @@ def preprocessing_pipeline(file_path,use_pca=False, n_components=50):
     print(f"Data preprocessing complete! Data saved as {data_type}.")
 
 # Run the pipeline
-# preprocessing_pipeline(use_pca=True, n_components=50)
+
+preprocessing_pipeline(RAW_DATA_PATH,use_pca=True, n_components=50)
