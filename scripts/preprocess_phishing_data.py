@@ -88,36 +88,53 @@ def save_data(X_train, X_test, y_train, y_test, train_dir, test_dir, data_type='
     np.save(os.path.join(test_dir, f'y_test_{data_type}.npy'), y_test)
 
 ### General Preprocessing Pipeline ###
-def preprocessing_pipeline(file_path, use_tokenization=False, use_pca=False, n_components=50):
+def preprocessing_pipeline(file_path,use_pca=False, n_components=50):
     # Step 1: Load data
+    print("Step 1: Loading data...")
     df = load_data(file_path)
+    print("Data loaded successfully!")
     
     # Step 2: Handle missing data
+    print("Step 2: Handling missing data...")
     df = handle_missing_data(df)
+    print("Missing data handled!")
     
     # Step 3: Encode categorical features
+    print("Step 3: Encoding categorical features...")
     categorical_cols = ['source', 'has_punycode', 'has_internal_links']  # Add more as needed
     df = encode_categorical_data(df)
+    print("Categorical features encoded!")
     
     # Step 4: Remove outliers
+    print("Step 4: Removing outliers...")
     feature_cols = ['url_length', 'url_entropy', 'digit_letter_ratio', 'domain_age_days']
     df = remove_outliers(df, feature_cols)
+    print("Outliers removed!")
     
     # Step 5: Scale features
+    print("Step 5: Scaling features...")
     df = scale_features(df, feature_cols)
+    print("Features scaled!")
     
     # Step 6: Train-test split
+    print("Step 6: Splitting data into training and testing sets...")
     X_train, X_test, y_train, y_test = split_data(df, target_column='label')
+    print("Data split into training and testing sets!")
     
     # Step 7: Apply PCA (if required)
+    if use_pca:
+        print(f"Step 7: Applying PCA with {n_components} components...")
+    else:
+        print("Step 7: Skipping PCA...")
     X_train = apply_pca(X_train, n_components=n_components, use_pca=use_pca)
     X_test = apply_pca(X_test, n_components=n_components, use_pca=use_pca)
+    print("PCA applied!" if use_pca else "PCA skipped!")
     
     # Step 8: Save processed data
+    print("Step 8: Saving processed data...")
     data_type = 'flattened' if use_pca else 'unflattened'
     save_data(X_train, X_test, y_train, y_test, PROCESSED_TRAIN_DIR, PROCESSED_TEST_DIR, data_type=data_type)
-    
     print(f"Data preprocessing complete! Data saved as {data_type}.")
 
 # Run the pipeline
-preprocessing_pipeline(RAW_DATA_PATH, use_pca=True, n_components=50)
+# preprocessing_pipeline(use_pca=True, n_components=50)
