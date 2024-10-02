@@ -3,12 +3,12 @@ from kaggle.api.kaggle_api_extended import KaggleApi
 
 # Define directories for the datasets
 DATA_DIR = "./data/raw_data"
-# CHESS_DIR = os.path.join(DATA_DIR, "chess")
+CHESS_DIR = os.path.join(DATA_DIR, "chess")
 PHISHING_DIR = os.path.join(DATA_DIR, "phishing")
 CLOUDCAST_DIR = os.path.join(DATA_DIR, "cloudcast")
 
 # Ensure directories exist
-# os.makedirs(CHESS_DIR, exist_ok=True)
+os.makedirs(CHESS_DIR, exist_ok=True)
 os.makedirs(PHISHING_DIR, exist_ok=True)
 os.makedirs(CLOUDCAST_DIR, exist_ok=True)
 
@@ -22,8 +22,8 @@ def download_dataset(dataset, path):
 
 if __name__ == "__main__":
     # Chess Dataset (small enough to include in repo)
-    # chess_dataset = 'datasnaek/chess'
-    # download_dataset(chess_dataset, CHESS_DIR)
+    chess_dataset = 'datasnaek/chess'
+    download_dataset(chess_dataset, CHESS_DIR)
     
     # Phishing URL Detection Dataset (large, download needed)
     phishing_dataset = 'sergioagudelo/phishing-url-detection'
