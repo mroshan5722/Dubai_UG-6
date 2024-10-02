@@ -8,7 +8,7 @@ from imblearn.over_sampling import SMOTE # type: ignore
 from scipy import stats # type: ignore
 
 # File paths for the raw data and processed data directories
-RAW_DATA_PATH = './data/raw_data/phishing_url/out.csv'
+RAW_DATA_PATH = './data/raw_data/phishing/out.csv'
 PROCESSED_TRAIN_FLATTENED_DIR = './data/processed_data/phishing/train_flattened'
 PROCESSED_TEST_FLATTENED_DIR = './data/processed_data/phishing/test_flattened'
 
