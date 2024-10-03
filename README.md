@@ -86,12 +86,12 @@ To ensure consistency across all environments, please set up a virtual environme
 1. **Create a Virtual Environment**:
    In the terminal, run the following command to create a virtual environment:
    ```bash
-   python3 -m venv env
+   python3 -m venv f20dl
    ```
 2. **Activate the Virtual Environment**: 
 After creating the virtual environment, activate it:
 ```bash
-source env/bin/activate
+source f20dl/bin/activate
 ```
 3. **Install the Dependencies**: 
 With the virtual environment activated, install the project dependencies from the `requirements.txt` file:

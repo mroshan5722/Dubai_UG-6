@@ -138,4 +138,4 @@ def preprocessing_pipeline(file_path,use_pca=False, n_components=50):
 
 # Run the pipeline
 
-preprocessing_pipeline(RAW_DATA_PATH,use_pca=True, n_components=50)
+preprocessing_pipeline(RAW_DATA_PATH,use_pca=False, n_components=50)
