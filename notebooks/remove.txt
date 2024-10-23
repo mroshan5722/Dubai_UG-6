@@ -1,2 +1,0 @@
-Test Note
-This folder contains jupiter Notebooks for analysis/modelling
