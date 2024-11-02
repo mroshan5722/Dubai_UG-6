@@ -112,12 +112,12 @@ deactivate
 1. **Create a Virtual Environment**: 
 In Command Prompt or PowerShell, run the following command to create a virtual environment:
 ```bash
-python -m venv env
+python -m venv f20dl
 ```
 2. **Activate the Virtual Environment**: 
 After creating the virtual environment, activate it:
 ```bash
-.\env\Scripts\activate
+.\f20dl\Scripts\activate
 ```
 3. **Install the Dependencies**: 
 With the virtual environment activated, install the project dependencies from the `requirements.txt` file:
