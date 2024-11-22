@@ -1,5 +1,3 @@
-# Project Progress Documentation
-
 ## Week 1
 
 ### Summary
@@ -11,12 +9,12 @@
 
 ### References
 
-- List any external resources, papers, or datasets used this week:
-  - No References used
+- 
 
 ### Challenges
 
-- **Challenge 1**: Conflicting ideas on which dataset to be chosen - It was decided that each member researches three datasets for the next meeting
+1. Conflicting ideas on which dataset to be chosen 
+	- It was decided that each member researches three datasets for the next meeting
 
 ### Next Steps
 
