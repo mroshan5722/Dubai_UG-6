@@ -3,6 +3,7 @@
 ### Summary
 
 - **Achievements**:
+- Implemented Clustering on Chess(K-Means, Hierarchical Clustering), Phishing (K-Means, DBSCAN, Hierarchical Clustering) and CLoudCast dataset (K-Means, DBSCAN, Hierarchical Clustering).
 - Tried implementing decision trees on Chess, Phishing and CLoudCast dataset.
 
 ### References
