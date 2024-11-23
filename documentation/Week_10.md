@@ -19,3 +19,4 @@
 
 - Complete implementation of perceptron on Phishing, and Chess dataset.
 - Search up other image dataset that could help us replace the CloudCast dataset.
+- Implement Naive Bayes on the Phishing dataset
