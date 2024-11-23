@@ -12,8 +12,8 @@
 
 ### Challenges
 
-1. Conflicting ideas on which dataset to be chosen 
-	- It was decided that each member researches three datasets for the next meeting
+1. Implementing CNN was causing some issues in CloudCast Dataset
+	- Professor asked us to discuss about this the following week
 
 ### Next Steps
 
