@@ -26,7 +26,7 @@ if __name__ == "__main__":
     download_dataset(chess_dataset, CHESS_DIR)
     
     # # Phishing URL Detection Dataset (large, download needed)
-    phishing_dataset = 'sergioagudelo/phishing-url-detection'
+    phishing_dataset = 'spectatorish/phishing0'
     download_dataset(phishing_dataset, PHISHING_DIR)
 
     traffic_sign = 'ahemateja19bec1025/traffic-sign-dataset-classification'
