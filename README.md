@@ -43,7 +43,7 @@
 
    - **Dropped Missing Values:** Removed rows or columns with missing data to ensure consistency and avoid errors during training.
    
-   - **Created Two Subsets:** Divided the data into two subsets for focused processing and analysis.
+   - **Created Two Balanced Subsets:** Divided the data into two balanced subsets one with 50,000 samples and one with 5,000 samples, to ensure all complex models that need extra computation can also be run using the smaller subset (hierarchical clustering).
    
    - **Shuffled the Data:** Randomized the order of samples.
    
@@ -51,7 +51,7 @@
    
    - **Split into Train-Test Sets:** Divided the data into training and testing sets to evaluate model performance effectively.
    
-   - **Model-Specific Steps:** Additional preprocessing steps were applied in the same file as required for the individual model implementations.
+   - **Model-Specific Steps:** Additional preprocessing steps were applied in the same preprocessing script as required for the individual model implementations.
 
 2. **Dataset 2 - Chess Openings**  
    - **Source**:  https://www.kaggle.com/datasets/datasnaek/chess
