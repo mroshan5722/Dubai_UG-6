@@ -46,14 +46,14 @@
    - **Steps Taken**: [Mention steps if any. Otherwise, say "No additional steps taken."]
 
 3. **Dataset 3 - Traffic Sign**  
-   - **Source**:  https://www.kaggle.com/datasets/datasnaek/chess
-   - **License**: CC0 1.0 Universal, Wieczerzak, D., Czarnul, P. (2023). Dataset Related Experimental Investigation of Chess Position Evaluation Using a Deep Neural Network. 
+   - **Source**:  -
+   - **License**: -
    - **Examples**:  
      | Feature 1 | Feature 2 | Output |
      |-----------|-----------|--------|
      | Example 1 | Example 2 | Output |
      | Example 3 | Example 4 | Output |
-   - **Steps Taken**: [Mention steps if any. Otherwise, say "No additional steps taken."]
+   - **Steps Taken**: Had to balance this dataset
 
 ---
 
