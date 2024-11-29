@@ -15,19 +15,19 @@
 
 | Milestone  | Expected Completion Date |
 |------------|--------------------------|
-| Requirement 1 (R1) – Data Collection & Setup  | [Date] |
-| Requirement 2 (R2) – Exploratory Data Analysis | [Date] |
-| Requirement 3 (R3) – Initial Modeling | [Date] |
-| Requirement 4 (R4) – Model Evaluation | [Date] |
-| Requirement 5 (R5) – Final Report & Presentation | [Date] |
+| Requirement 1 (R1) – Data Collection & Setup  | 20/09/24 |
+| Requirement 2 (R2) – Exploratory Data Analysis | 27/09/24 |
+| Requirement 3 (R3) – Initial Modeling | 10/10/24 |
+| Requirement 4 (R4) – Model Evaluation | 20/10/24 |
+| Requirement 5 (R5) – Final Report & Presentation | 20/11/24 |
 
 ---
 
 ### Dataset Sources <br>
 
-1. **Dataset 1**  
-   - **Source**: [Link to the true source]  
-   - **License**: [License type, e.g., CC BY 4.0]  
+1. **Dataset 1 - URL Phishing**  
+   - **Source**:  https://www.kaggle.com/datasets/sergioagudelo/phishing-url-detection  
+   - **License**: Massachusetts Institute of Technology,Dataset compiled and published in September 2024, Only used in  kaggle notebooks  
    - **Examples**:  
      | Feature 1 | Feature 2 | Output |
      |-----------|-----------|--------|
@@ -35,15 +35,25 @@
      | Example 3 | Example 4 | Output |
    - **Steps Taken**: [If any steps were taken to expand or clean the dataset, mention them here. If none, write "No additional steps taken."]
 
-2. **Dataset 2**  
-   - **Source**: [Link to the true source]  
-   - **License**: [License type]  
+2. **Dataset 2 - Chess Openings**  
+   - **Source**:  https://www.kaggle.com/datasets/datasnaek/chess
+   - **License**: CC0 1.0 Universal, Wieczerzak, D., Czarnul, P. (2023). Dataset Related Experimental Investigation of Chess Position Evaluation Using a Deep Neural Network. 
    - **Examples**:  
      | Feature 1 | Feature 2 | Output |
      |-----------|-----------|--------|
      | Example 1 | Example 2 | Output |
      | Example 3 | Example 4 | Output |
    - **Steps Taken**: [Mention steps if any. Otherwise, say "No additional steps taken."]
+
+3. **Dataset 3 - Traffic Sign**  
+   - **Source**:  -
+   - **License**: -
+   - **Examples**:  
+     | Feature 1 | Feature 2 | Output |
+     |-----------|-----------|--------|
+     | Example 1 | Example 2 | Output |
+     | Example 3 | Example 4 | Output |
+   - **Steps Taken**: Had to balance this dataset
 
 ---
 
