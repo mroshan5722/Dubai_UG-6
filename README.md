@@ -29,10 +29,16 @@
    - **Source**:  https://www.kaggle.com/datasets/sergioagudelo/phishing-url-detection  
    - **License**: Massachusetts Institute of Technology,Dataset compiled and published in September 2024, Only used in  kaggle notebooks  
    - **Examples**:  
-     | Feature 1 | Feature 2 | Output |
-     |-----------|-----------|--------|
-     | Example 1 | Example 2 | Output |
-     | Example 3 | Example 4 | Output |
+     ### Dataset: URL Data
+
+| url                                       | source          | label       | url_length | starts_with_ip | url_entropy | has_punycode | digit_letter_ratio | dot_count | at_count | dash_count | tld_count | domain_has_digits | subdomain_count | nan_char_entropy | has_internal_links | whois_data                                               | domain_age_days |
+|-------------------------------------------|-----------------|-------------|------------|----------------|-------------|--------------|--------------------|-----------|----------|------------|-----------|--------------------|------------------|------------------|--------------------|---------------------------------------------------------|-----------------|
+| apaceast.cloudguest.central.arubanetworks.com | Cisco-Umbrella | legitimate  | 45         | False          | 3.924535    | False        | 0.0                | 4         | 0        | 0          | 0         | False              | 3                | 0.310387         | False              | {'domain_name': ['ARUBANETWORKS.COM', 'arubane...      | 8250.0          |
+| quintadonoval.com                         | Majestic        | legitimate  | 17         | False          | 3.572469    | False        | 0.0                | 1         | 0        | 0          | 0         | False              | 0                | 0.240439         | False              | {'domain_name': ['QUINTADONOVAL.COM', 'quintad...      | 10106.0         |
+| nomadfactory.com                          | Majestic        | legitimate  | 16         | False          | 3.327820    | False        | 0.0                | 1         | 0        | 0          | 0         | False              | 0                | 0.250000         | False              | {'domain_name': ['NOMADFACTORY.COM', 'nomadfac...      | 8111.0          |
+| tvarenasport.com                          | Majestic        | legitimate  | 16         | False          | 3.500000    | False        | 0.0                | 1         | 0        | 0          | 0         | False              | 0                | 0.250000         | False              | {'domain_name': ['TVARENASPORT.COM', 'tvarenas...      | 5542.0          |
+| widget.cluster.groovehq.com               | Cisco-Umbrella | legitimate  | 27         | False          | 3.930270    | False        | 0.0                | 3         | 0        | 0          | 0         | False              | 2                | 0.352214         | False              | {'domain_name': 'GROOVEHQ.COM', 'registrar': '...      | 5098.0          |
+
    - **Steps Taken**: [If any steps were taken to expand or clean the dataset, mention them here. If none, write "No additional steps taken."]
 
 2. **Dataset 2 - Chess Openings**  
