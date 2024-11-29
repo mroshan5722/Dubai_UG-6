@@ -39,11 +39,21 @@
    - **Source**:  https://www.kaggle.com/datasets/datasnaek/chess
    - **License**: CC0 1.0 Universal, Wieczerzak, D., Czarnul, P. (2023). Dataset Related Experimental Investigation of Chess Position Evaluation Using a Deep Neural Network. 
    - **Examples**:  
-     | Feature 1 | Feature 2 | Output |
-     |-----------|-----------|--------|
-     | Example 1 | Example 2 | Output |
-     | Example 3 | Example 4 | Output |
-   - **Steps Taken**: [Mention steps if any. Otherwise, say "No additional steps taken."]
+     Sure! Here's the data you provided, formatted in the requested style:
+
+   | id         | rated   | created_at   | last_move_at | turns | victory_status | winner | increment_code | white_id     | white_rating | black_id     | black_rating | moves                                                                                          | opening_eco | opening_name                     | opening_ply |
+   |------------|---------|--------------|--------------|-------|-----------------|--------|----------------|--------------|--------------|--------------|--------------|------------------------------------------------------------------------------------------------|-------------|-----------------------------------|-------------|
+   | TZJHLljE   | False   | 1.504210e+12 | 1.504210e+12 | 13    | outoftime       | white  | 15+2           | bourgris     | 1500         | a-00         | 1191         | d4 d5 c4 c6 cxd5 e6 dxe6 fxe6 Nf3 Bb4+ Nc3 Ba5...                                                 | D10         | Slav Defense: Exchange Variation  | 5           |
+   | l1NXvwaE   | True    | 1.504130e+12 | 1.504130e+12 | 16    | resign          | black  | 5+10           | a-00         | 1322         | skinnerua    | 1261         | d4 Nc6 e4 e5 f4 f6 dxe5 fxe5 fxe5 Nxe5 Qd4 Nc6...                                               | B00         | Nimzowitsch Defense: Kennedy Variation | 4           |
+   | mIICvQHh   | True    | 1.504130e+12 | 1.504130e+12 | 61    | mate            | white  | 5+10           | ischia       | 1496         | a-00         | 1500         | e4 e5 d3 d6 Be3 c6 Be2 b5 Nd2 a5 a4 c5 axb5 Nc...                                               | C20         | King's Pawn Game: Leonardis Variation | 3           |
+   | kWKvrqYL   | True    | 1.504110e+12 | 1.504110e+12 | 61    | mate            | white  | 20+0           | daniamurashov| 1439         | adivanov2009 | 1454         | d4 d5 Nf3 Bf5 Nc3 Nf6 Bf4 Ng4 e3 Nc6 Be2 Qd7 O...                                               | D02         | Queen's Pawn Game: Zukertort Variation | 3           |
+   | 9tXo1AUZ   | True    | 1.504030e+12 | 1.504030e+12 | 95    | mate            | white  | 30+3           | nik221107    | 1523         | adivanov2009 | 1469         | e4 e5 Nf3 d6 d4 Nc6 d5 Nb4 a3 Na6 Nc3 Be7 b4 N...                                               | C41         | Philidor Defense                  | 5           |
+
+   - **Steps Taken**: The following preprocessing steps were performed on the dataset:
+   -    **Removing Irrelevant Columns**: Unnecessary columns were discarded to retain only the relevant data for analysis and model training.
+   -    **Label-Encoding Categorical Features**: Categorical variables were encoded into numerical values to make them compatible with machine learning models.
+   -    **Defining the Target Variable**: The target variable, representing the outcome of the match, was identified for prediction purposes.
+   -    **Splitting the Dataset**: The dataset was divided into training and testing sets to evaluate the model's performance effectively.
 
 3. **Dataset 3 - Traffic Sign**  
    - **Source**:  -
