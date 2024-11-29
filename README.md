@@ -15,11 +15,11 @@
 
 | Milestone  | Expected Completion Date |
 |------------|--------------------------|
-| Requirement 1 (R1) – Data Collection & Setup  | [Date] |
-| Requirement 2 (R2) – Exploratory Data Analysis | [Date] |
-| Requirement 3 (R3) – Initial Modeling | [Date] |
-| Requirement 4 (R4) – Model Evaluation | [Date] |
-| Requirement 5 (R5) – Final Report & Presentation | [Date] |
+| Requirement 1 (R1) – Data Collection & Setup  | 20/09/24 |
+| Requirement 2 (R2) – Exploratory Data Analysis | 27/09/24 |
+| Requirement 3 (R3) – Initial Modeling | 10/10/24 |
+| Requirement 4 (R4) – Model Evaluation | 20/10/24 |
+| Requirement 5 (R5) – Final Report & Presentation | 20/11/24 |
 
 ---
 
