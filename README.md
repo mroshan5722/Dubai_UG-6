@@ -29,7 +29,6 @@
    - **Source**:  https://www.kaggle.com/datasets/sergioagudelo/phishing-url-detection  
    - **License**: Massachusetts Institute of Technology,Dataset compiled and published in September 2024, Only used in  kaggle notebooks  
    - **Examples**:  
-     ### Dataset: URL Data
 
 | url                                       | source          | label       | url_length | starts_with_ip | url_entropy | has_punycode | digit_letter_ratio | dot_count | at_count | dash_count | tld_count | domain_has_digits | subdomain_count | nan_char_entropy | has_internal_links | whois_data                                               | domain_age_days |
 |-------------------------------------------|-----------------|-------------|------------|----------------|-------------|--------------|--------------------|-----------|----------|------------|-----------|--------------------|------------------|------------------|--------------------|---------------------------------------------------------|-----------------|
