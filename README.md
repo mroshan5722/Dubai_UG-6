@@ -69,13 +69,17 @@
 
 ### Running the Data Preparation Pipeline <br>
 
-How to run your data preparation pipeline, with a short overview of the steps it includes
+1. **Set up the Virtual Environment**:
+   - First, download and set up the virtual environment to ensure all necessary dependencies are isolated for the project.
 
-A short description (100 words max.) of each requirements (R2–R5) and their location(s) within your repository using permanent links. This includes:
-a. What is your model predicting? (a.k.a., the outputs)
-b. What is your model using to predict from? (a.k.a., the inputs)
-c. A table of results (especially for R4/R5), using Markdown tables
-d. A figure showing the results, using permanent links
+2. **Download Datasets**:
+   - Use the provided `download_data.py` script to download the datasets directly from Kaggle. Make sure you have your Kaggle API credentials configured before running the script.
+
+3. **Run Preprocessing Scripts**:
+   - Execute the relevant preprocessing scripts for each dataset to clean, transform, and prepare the data for model training. This step includes tasks such as removing irrelevant columns, encoding categorical features, and splitting the dataset into training and testing sets.
+
+4. **Run the Jupyter Notebook**:
+   - Once the datasets are preprocessed, run the Jupyter Notebook for the selected model to perform the training and evaluation. The notebook will guide you through the steps of model building, evaluation, and results interpretation.
 
 ---
 
@@ -89,10 +93,6 @@ d. A figure showing the results, using permanent links
 | README.md | Project overview and instructions |
 
 <br><br>
----
-
-#### Note : Information you will present in your Project Pitch must also be on the GitHub README. <br><br>
-
 ---
 
 ## Setting Up a Virtual Environment and Installing Dependencies
