@@ -8,8 +8,7 @@
 
 ### References
 
--  https://colab.research.google.com/github/ageron/handson
-ml3/blob/main/10_neural_nets_with_keras.ipynb
+-  https://colab.research.google.com/github/ageron/handsonml3/blob/main/10_neural_nets_with_keras.ipynb
 
 ### Challenges
 
