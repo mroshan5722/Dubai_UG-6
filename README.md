@@ -75,13 +75,23 @@
 
 3. **Dataset 3 - Traffic Sign**  
    - **Source**:  https://www.kaggle.com/datasets/ahemateja19bec1025/traffic-sign-dataset-classification
-   - **License**: -
-   - **Examples**:  
-     | Feature 1 | Feature 2 | Output |
-     |-----------|-----------|--------|
-     | Example 1 | Example 2 | Output |
-     | Example 3 | Example 4 | Output |
-   - **Steps Taken**: Had to balance this dataset
+   - **License**: CC0: Public Domain
+   - **Examples**:
+   
+   | ClassId | Name               |
+   |--------|-----------------------|
+   |     15 | Speed limit (15km/h) |
+   |     50 | Speed limit (50km/h) |
+   |     30 | Speed limit (30km/h) |
+   |     40 | Speed limit (40km/h) |
+   |      5 | Speed limit (5km/h)  |
+
+   - **Steps Taken**: 
+   - Converted images to grayscale.
+   - Resized images to 100x100 dimensions.
+   - Removed classes with fewer than 20 images.
+   - Limited classes to a maximum of 150 images.
+   - Augmented classes with 20–150 images to reach 150 images each.
 
 ---
 
