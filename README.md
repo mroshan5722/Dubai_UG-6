@@ -36,8 +36,8 @@
    - **Steps Taken**: [If any steps were taken to expand or clean the dataset, mention them here. If none, write "No additional steps taken."]
 
 2. **Dataset 2**  
-   - **Source**: [Link to the true source]  
-   - **License**: [License type]  
+   - **Source**:  https://www.kaggle.com/datasets/datasnaek/chess
+   - **License**: CC0 1.0 Universal, Wieczerzak, D., Czarnul, P. (2023). Dataset Related Experimental Investigation of Chess Position Evaluation Using a Deep Neural Network. 
    - **Examples**:  
      | Feature 1 | Feature 2 | Output |
      |-----------|-----------|--------|
