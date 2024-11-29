@@ -38,7 +38,20 @@
 | tvarenasport.com                          | Majestic        | legitimate  | 16         | False          | 3.500000    | False        | 0.0                | 1         | 0        | 0          | 0         | False              | 0                | 0.250000         | False              | {'domain_name': ['TVARENASPORT.COM', 'tvarenas...      | 5542.0          |
 | widget.cluster.groovehq.com               | Cisco-Umbrella | legitimate  | 27         | False          | 3.930270    | False        | 0.0                | 3         | 0        | 0          | 0         | False              | 2                | 0.352214         | False              | {'domain_name': 'GROOVEHQ.COM', 'registrar': '...      | 5098.0          |
 
-   - **Steps Taken**: [If any steps were taken to expand or clean the dataset, mention them here. If none, write "No additional steps taken."]
+   - **Steps Taken**:
+  
+
+   - **Dropped Missing Values:** Removed rows or columns with missing data to ensure consistency and avoid errors during training.
+   
+   - **Created Two Subsets:** Divided the data into two subsets for focused processing and analysis.
+   
+   - **Shuffled the Data:** Randomized the order of samples.
+   
+   - **Saved Cleaned Subsets:** Saved the processed subsets to use them for the different model implementations.
+   
+   - **Split into Train-Test Sets:** Divided the data into training and testing sets to evaluate model performance effectively.
+   
+   - **Model-Specific Steps:** Additional preprocessing steps were applied in the same file as required for the individual model implementations.
 
 2. **Dataset 2 - Chess Openings**  
    - **Source**:  https://www.kaggle.com/datasets/datasnaek/chess
