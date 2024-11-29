@@ -39,7 +39,7 @@
    - **Source**:  https://www.kaggle.com/datasets/datasnaek/chess
    - **License**: CC0 1.0 Universal, Wieczerzak, D., Czarnul, P. (2023). Dataset Related Experimental Investigation of Chess Position Evaluation Using a Deep Neural Network. 
    - **Examples**:  
-     Sure! Here's the data you provided, formatted in the requested style:
+     
 
    | id         | rated   | created_at   | last_move_at | turns | victory_status | winner | increment_code | white_id     | white_rating | black_id     | black_rating | moves                                                                                          | opening_eco | opening_name                     | opening_ply |
    |------------|---------|--------------|--------------|-------|-----------------|--------|----------------|--------------|--------------|--------------|--------------|------------------------------------------------------------------------------------------------|-------------|-----------------------------------|-------------|
