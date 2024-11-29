@@ -1,4 +1,4 @@
-# Project Title <br>
+# A Comparative Study of ML Approaches for Diverse Data Types Across Multiple Domains <br>
 
 ### Group Name: **Dubai Group 6**
 
